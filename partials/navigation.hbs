@@ -1,0 +1,9 @@
+<div class="collapse navbar-collapse" id="main-menu">
+    <!-- start navigation -->
+    <ul class="menu navbar-right">
+	    {{#foreach navigation}}
+		<li class="{{slug}} {{#if current}}nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+		{{/foreach}}
+	</ul>
+    <!-- end navigation -->
+</div>

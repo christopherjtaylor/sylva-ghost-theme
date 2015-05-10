@@ -1,0 +1,21 @@
+<!-- start pagination -->
+<div class="prev-next-wrap">
+	<div class="pagination clearfix" role="navigation">
+		{{#next_post}}
+		<a class="previous-post btn btn-default pull-left" href="{{url}}">
+			<div class="prev-next-inner">
+				<i class="fa fa-long-arrow-left fa-fw"></i> Previous Post
+				<div class="title">{{title}}</div>
+			</div>
+		</a>
+		{{/next_post}}
+        {{#prev_post}}
+        <a class="next-post btn btn-default" href="{{url}}">
+			<div class="prev-next-inner">
+				Next Post <i class="fa fa-long-arrow-right fa-fw"></i>
+				<div class="title">{{title}}</div>
+			</div>
+		</a>
+        {{/prev_post}}
+    </div>
+</div>

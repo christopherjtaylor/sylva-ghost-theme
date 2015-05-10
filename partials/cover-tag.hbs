@@ -1,0 +1,19 @@
+<!-- start cover area / cover-tag -->
+<div class="cover align-center"  {{#if tag.image}}style="background-image: url({{tag.image}})" {{else}} {{#if @blog.cover}} style="background-image: url({{@blog.cover}})" {{/if}} {{/if}}>
+	<div class="cover-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h1 class="title">Tag: {{tag.name}}</h1>
+					<div class="post-count">
+						<span>Total {{plural pagination.total empty='0 Post' singular='% Post' plural='% Posts'}}</span>
+					</div>
+					{{#if tag.description}}
+					<p class="description tag-description">{{tag.description}}</p>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end cover area -->

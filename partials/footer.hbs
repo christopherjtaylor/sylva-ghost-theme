@@ -1,0 +1,31 @@
+	<!-- start footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				{{! inserting copyright partial}}
+				{{> copyright}}
+				{{! inserting social links partial}}
+				{{> social-link}}
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<a href="#" id="back-to-top" class="align-center"><i class="fa fa-long-arrow-up"></i></a>
+	{{ghost_foot}}
+	<script type="text/javascript">
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+	<script src="{{asset "js/bootstrap.min.js"}}"></script>
+	<script src="{{asset "js/jquery.fitvids.js"}}"></script>
+	<script src="{{asset "js/highlight.pack.js"}}"></script>
+	<script src="{{asset "js/main.js"}}"></script>
+	{{> analytics}}
+</body>
+</html>
