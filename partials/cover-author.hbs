@@ -5,16 +5,16 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					{{#if author.image}}
-						<img src="{{author.image}}" alt="Author image" class="avatar">
+						<img src="{{author.iimage}}" alt="Author image" class="avatar">
 					{{/if}}
 					<h2 class="name">{{author.name}}</h2>
 					<div class="meta-info">
 						<span class="post-count"><i class="fa fa-pencil-square-o"></i>{{plural pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
 						{{#if author.location}}
-						<span class="loaction"><i class="fa fa-map-marker"></i>{{author.location}}</span>
+						<span class="location"><i class="fa fa-map-marker"></i>{{author.location}}</span>
 						{{/if}}
 						{{#if author.website}}
-						<span class="website"><i class="fa fa-globe"></i><a href="{{author.website}}" targer="_BLANK">Website</a></span>
+						<span class="website"><i class="fa fa-globe"></i><a href="{{author.website}}" target="_BLANK">Website</a></span>
 						{{/if}}
 					</div>
 					<p class="description bio">{{author.bio}}</p>
