@@ -310,6 +310,33 @@ pre {
 		}
 		
 	}
+	.menu {
+		padding: 0;
+		margin-bottom: 0;
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 12px 0 12px 32px;
+			font-family: 'Montserrat', sans-serif;
+			a {
+				position: relative;
+				text-transform: uppercase;
+				color: @text-color;
+				font-size: 14px;
+				letter-spacing: 2px;
+				.transition(color 0.3s);
+				&:hover, &:focus {
+					color: @theme-color;
+					text-decoration: none;
+				}
+			}
+			&.nav-current {
+				a {
+					color: @theme-color;
+				}
+			}
+		}
+	}
 }
 /*====================================================
 	main content area
