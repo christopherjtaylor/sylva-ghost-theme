@@ -257,6 +257,7 @@ pre {
 	background: @white;
 	.transition(all 0.5s);
 	position: relative;
+    float: none;
 	&.fixed {
 		position: fixed;
 		top: 0;
@@ -266,12 +267,14 @@ pre {
 	.navbar {
 		border: none;
 		margin-bottom: 0;
+        float: none;
 	}
 	.container {
 		box-sizing: border-box;
 		.navbar-content-wrap {
 			border-bottom: 1px solid @text-color;
-			padding: 32px 0;
+            float: none;
+		//	padding: 32px 0;
 		}
 	}
 	.btn-menu-toggle {
@@ -316,7 +319,7 @@ pre {
 		li {
 			list-style: none;
 			display: inline-block;
-			margin: 12px 0 12px 0px;
+			margin: 12px 0 12px 32px;
 			font-family: 'Montserrat', sans-serif;
 			a {
 				position: relative;
@@ -806,8 +809,8 @@ pre {
 	}
 
 }
-//@media screen and (min-width:1024px){
-   // .cover{
-   //     background-attachment:fixed;
-   // }
-//}
+@media screen and (min-width:2048px){
+ .cover{
+     background-attachment:fixed;
+ }
+}
