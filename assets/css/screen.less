@@ -172,7 +172,6 @@ pre {
 	background-size: cover;
     background-color: transparent;
 	background-position: center;
-	background-attachment: fixed;
 	h1, h2, h3, h4, h5, h6 {
 		color: @white;
 	}
@@ -278,7 +277,7 @@ pre {
 	.btn-menu-toggle {
 		padding: 10px;
 		z-index: 99;
-        align-content: center;
+        float: none;
 		span {
 			background: @text-color-dark;
 			.transition(all 0.45s);
@@ -806,4 +805,9 @@ pre {
 		}
 	}
 
+}
+@media screen and (min-width:768px){
+    .cover{
+        background-attachment:fixed;
+    }
 }
