@@ -256,8 +256,7 @@ pre {
 	width: 100%;
 	background: @white;
 	.transition(all 0.5s);
-	position: relative;
-    float: none;
+	position: absolute;
 	&.fixed {
 		position: fixed;
 		top: 0;
@@ -267,20 +266,18 @@ pre {
 	.navbar {
 		border: none;
 		margin-bottom: 0;
-        float: none;
 	}
 	.container {
 		box-sizing: border-box;
 		.navbar-content-wrap {
 			border-bottom: 1px solid @text-color;
-            float: none;
 			padding: 32px 0;
 		}
 	}
 	.btn-menu-toggle {
         padding: 10px;
 		z-index: 99;
-        float: none;
+        float: inherit;
 		span {
 			background: @text-color-dark;
 			.transition(all 0.45s);
