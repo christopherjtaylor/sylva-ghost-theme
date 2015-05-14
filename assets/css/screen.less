@@ -256,7 +256,7 @@ pre {
 	width: 100%;
 	background: @white;
 	.transition(all 0.5s);
-	position: absolute;
+	position: relative;
 	&.fixed {
 		position: fixed;
 		top: 0;
@@ -277,7 +277,7 @@ pre {
 	.btn-menu-toggle {
         padding: 10px;
 		z-index: 99;
-        float: inherit;
+        float: none;
 		span {
 			background: @text-color-dark;
 			.transition(all 0.45s);
@@ -806,7 +806,7 @@ pre {
 	}
 
 }
-@media screen and (min-width:2048px){
+@media screen and (min-width:1024px){
  .cover{
      background-attachment:fixed;
  }
