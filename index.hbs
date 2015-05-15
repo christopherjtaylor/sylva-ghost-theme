@@ -34,8 +34,11 @@
 								{{content words="1000"}}
 							</div>
 							<div class="permalink align-center">
+								{{#if content words>"1000"}
 								<a href="{{url}}" class="btn btn-default">Read More</a>
+								}
 							</div>
+								{{/if}}
 							<footer class="post-footer clearfix">
 								{{#if tags}}
 								<div class="pull-left tag-list">
